@@ -1,0 +1,164 @@
+@font-face {
+  font-family: sans;
+  src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans;
+}
+
+img {
+  max-width: 100%;
+}
+
+h4 {
+  font-size: clamp(2.8rem, 3.2vw, 3.8rem);
+}
+
+p,
+label {
+  font-size: clamp(1.5rem, 1.6vw, 1.8rem);
+}
+a {
+  font-size: clamp(1.5rem, 1.6vw, 1.8rem);
+  text-decoration: none;
+}
+
+/* ! Header */
+
+header {
+  padding: 10vh 0;
+}
+
+svg {
+  margin-top: -1.5vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 2vw;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100vw;
+  height: 20vh;
+}
+
+nav a {
+  padding-left: 1.5vw;
+  color: #867772;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* ! Main */
+
+/* Wrapper */
+
+.wrapper {
+  background: url(../assets/img/section-composition4.jpg) no-repeat left;
+  background-size: 100% 100%;
+  background-color: #2e2e2e;
+  max-height: 100vh;
+  height: 100%;
+  width: 50%;
+}
+
+.wrapper-bgr {
+  background-color: #2e2e2e;
+  width: 50vw;
+  height: 100vh;
+  margin-left: 50vw;
+}
+
+/* Aside */
+
+aside {
+  position: fixed;
+  top: 15vh;
+  left: 8vh;
+}
+
+aside a::before {
+  content: "◦";
+  font-size: 3rem;
+  margin-left: -2.1vw;
+  padding-right: 2vw;
+}
+
+aside a {
+  padding-top: 1.5vh;
+  text-transform: uppercase;
+  color: #737373;
+}
+
+#shop {
+  color: white;
+}
+
+aside a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+aside div {
+  border-left: solid 0.1vw #737373;
+  height: 4vh;
+  margin-left: -1.6vw;
+  margin-top: 0.5vh;
+}
+
+/* Sounds */
+
+.sounds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h4 {
+  color: #ebccc2;
+  font-weight: 400;
+  letter-spacing: 0.2vw;
+  margin-top: -2vh;
+  margin-bottom: 2vh;
+  margin-left: 3vw;
+}
+
+.sounds p {
+  width: 35vw;
+  color: #6e6e6e;
+  margin-left: 3.5vw;
+}
+
+.sounds p:nth-of-type(1) {
+  margin-bottom: 2vh;
+}
+
+.sounds p:nth-of-type(2) {
+  margin-bottom: 3vh;
+}
+
+.sounds div {
+  text-align: center;
+}
+
+.sounds a {
+  padding: 1vh 2vw;
+  background-color: #ebccc2;
+  color: #2e2e2e;
+  margin-left: 3.5vw;
+}

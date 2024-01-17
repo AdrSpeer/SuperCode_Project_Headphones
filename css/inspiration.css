@@ -1,0 +1,172 @@
+@font-face {
+  font-family: sans;
+  src: url(../assets/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: sans;
+}
+
+img {
+  max-width: 100%;
+}
+
+h3 {
+  font-size: clamp(2.7rem, 3.5vw, 4.2rem);
+}
+h4 {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+
+h6 {
+  font-size: clamp(1.8rem, 1.8vw, 1.8rem);
+  color: #ebccc2;
+  font-weight: 400;
+}
+p,
+label {
+  font-size: clamp(1.5rem, 1.6vw, 1.8rem);
+  color: #737373;
+  line-height: 3vh;
+}
+a {
+  font-size: clamp(1.5rem, 1.6vw, 1.8rem);
+  text-decoration: none;
+}
+li {
+  font-size: clamp(2rem, 2vw, 2rem);
+}
+
+.wrapper {
+  background-color: #2e2e2e;
+  padding-right: 5vw;
+  padding-left: 20vw;
+}
+
+/* ! Header */
+
+header {
+  padding: 7vh 0;
+}
+
+svg {
+  margin-top: -1.5vh;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 4vh 2vw;
+  right: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  width: 100vw;
+}
+
+nav a {
+  padding-left: 1.5vw;
+  color: #867772;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+/* ! Main */
+
+/* Aside */
+
+aside {
+  position: fixed;
+  top: 20vh;
+  left: 3vw;
+}
+
+aside a::before {
+  content: "◦";
+  font-size: 3rem;
+  margin-left: -2.1vw;
+  padding-right: 2vw;
+}
+
+aside a {
+  padding-top: 1.5vh;
+  text-transform: uppercase;
+  color: #737373;
+}
+
+#inspiration {
+  color: white;
+}
+
+aside a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+aside div {
+  border-left: solid 0.1vw #737373;
+  height: 4vh;
+  margin-top: 0.5vh;
+}
+
+/* Content */
+
+.content {
+  padding-bottom: 10vh;
+}
+
+.content h4 {
+  color: #ebccc2;
+  font-weight: 400;
+  padding: 3vh 0;
+  letter-spacing: 0.2vw;
+}
+
+.content h3 {
+  color: #ebccc2;
+  font-weight: 400;
+  padding: 1.5vh 0;
+}
+
+.content div {
+  display: flex;
+  gap: 0.4vw;
+  padding: 1.5vh 0;
+}
+
+.box p {
+  border: solid white 0.1vw;
+  padding: 0.5vh 2vw;
+  border-radius: 5px;
+  margin-bottom: 1.5vh;
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 15vh;
+}
+
+.grid div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1vw;
+}
+
+video {
+  width: 50vw;
+}
